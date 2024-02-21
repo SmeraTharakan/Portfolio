@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="white logo.png" class="logo" />
+        <ul>
+          <li><a href="C:\Users\thara\OneDrive\Documents\html\3\index.html">Home</a></li>
+          <li><a href="C:/Users/thara/OneDrive/Documents/html/3/about.html">About</a></li>
+          <li><a href="C:\Users\thara\OneDrive\Documents\html\3\projects.html">Projects</a></li>
+          <li><a href="C:\Users\thara\OneDrive\Documents\html\3\contact.html">Contact</a></li>
+        </ul>
+      </nav>
+        
+        
+      
+    </div>
+    <div id="about">
+      <div class="container">
+        <h1 class="subtitle">About Me</h1><br>
+          <div class="row">
+              <div class="about-col-1">
+                
+                  <p>
+                    Hello! I'm Smera Tharakan, currently pursuing my Bachelor's in Electronics and Communication 
+                    Engineering at Rajiv Gandhi Institute of Technology, Kottayam. 
+                    Throughout my education, I've cultivated essential skills such as time management, teamwork, 
+                    problem-solving, and adaptability.
+                    Proficient in languages like Python, C, and C++, I've embarked on numerous projects to hone 
+                    my programming expertise. One such project, the "Self-Stabilizing Spoon" designed to aid 
+                    individuals with Parkinson's disease, stands as a testament to my commitment and capability. 
+                    As I eagerly anticipate transitioning into this exciting field, I am keen to leverage my skills and 
+                    experiences to contribute meaningfully. I'm on the lookout for opportunities to collaborate, learn, 
+                    and grow, ready to embark on new challenges and make a positive impact.
+                  </p>
+                  
+              </div>
+              <div class="about-col-2">
+                  
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                      <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                          <li><span>Programming Languages</span><br>Python<br>C<br>C++</C></li>
+                          <li><span>Soft Skills</span><br>Adaptibility<br>Time management<br>Teamwork</C></li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                      <ul>
+                          <li><span>Rajiv Gandhi Institute Technology, Kottayam</span><br>Bachelor of Technology , ECE <br>CGPA : 7.81<br>2020-2024</C></li>
+                          <li><span>St. Clare's CGHSS , Thrissur</span><br>Higher secondary <br> Percentage : 97.4 %<br>2018-2020</C></li>
+                          <li><span>De Paul EMHSS , Choondal</span><br>High School<br> Percentage : 100 %<br>2016-2018</C></li>
+  
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="courses">
+                    <ul>
+                        <li><span>Joy of computing Python </span><br> NPTEL <br>2022</C></li>
+                        <li><span>Crash course on Python</span> <br>COURSERA<br>2023</C></li>
+                       
+
+                    </ul>
+                </div>
+              </div>
+          </div>
+      
+  
+      </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  </body>
+</html>
